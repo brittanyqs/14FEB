@@ -1,0 +1,113 @@
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ffc1db, #ddb1bb); /* Colores pastel */
+    color: #333;
+    text-align: center;
+}
+.heart {
+    font-size: 80px;
+    animation: pulse 1.5s infinite alternate;
+    color: #ff4d80;  /* Rosa suave */
+}
+
+.image{
+    width: 350px;
+    height: 430px;
+    border-radius: 3%;
+}
+.image1{
+    width: 200px;
+    height: 200px;
+    border-radius: 3%;}
+/* Contenedor principal */
+.container {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    color: #97193d;  
+    animation: fadeIn 2s ease-out;
+}
+
+p {
+    font-size: 1.2em;
+    color: #97193d;  
+    animation: fadeIn 3s ease-out;
+}
+
+/* Flexbox para organizar las tarjetas */
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/* Tarjetas pequeñas a la izquierda */
+.left-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+}
+
+/* Estilo para cada tarjeta */
+.card {
+    background-color: #fff;
+    color: #333;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición suave */
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Agranda ligeramente la tarjeta */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.card:active {
+    transform: scale(0.98); /* Efecto al hacer clic: reduce ligeramente el tamaño */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Vuelve a la sombra normal */
+}
+
+/* Estilo para la tarjeta principal */
+.main-card {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    width: 450px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Submensaje debajo de la imagen */
+.sub-message {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #97193d; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}

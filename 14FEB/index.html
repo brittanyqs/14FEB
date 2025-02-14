@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz San Valentín</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vinculamos el CSS -->
+</head>
+<body>
+    <div class="container">
+        <div class="heart">❤️</div>
+        <h1>¡Feliz San Valentín!</h1>
+        <p>Para mi dari bella 💖</p>
+
+        <div class="content">
+            <!-- Sección de tarjetas pequeñas a la izquierda -->
+            <div class="left-cards">
+                <div class="card small-card" onclick="animateCard(this)">
+                    <p class="sub-message">Muchas gracias por ser una amiga tan increíble y leal, te amo con todo mi corazón  💕</p>
+                </div>
+                <div class="card small-card" onclick="animateCard(this)">
+                    <img class="image1" src="img/image copy.png" alt="Imagen San Valentín">
+                </div>
+                <div class="card small-card" onclick="animateCard(this)">
+                    <p class="sub-message">Espero y podamos ser amiguitas muchos años más y compartir más momentos juntos, ye amo muchoooo.</p>
+                </div>
+            </div>
+
+            <!-- Tarjeta principal grande a la derecha -->
+            <div class="card main-card" onclick="animateCard(this)">
+                <img class="image" src="img/image.png" alt="Imagen San Valentín">
+                <p class="sub-message">💖</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Vinculamos el archivo JS -->
+</body>
+</html>
